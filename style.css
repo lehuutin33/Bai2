@@ -1,0 +1,47 @@
+/* style.css */
+
+/* 1. Định dạng bảng ra giữa màn hình */
+table {
+    margin: 0 auto; /* Căn giữa bảng */
+    border-collapse: collapse; /* Gộp viền bảng */
+}
+
+/* Khoảng cách lề bên trong các ô */
+th, td {
+    padding: 8px 15px; /* KHoảng cách trên dưới 8px, trái phải 15px */
+    text-align: center; /* Căn giữa nội dung trong ô */
+}
+
+/* 2. Dòng tiêu đề: Chữ màu xanh, cỡ chữ 25 */
+table tr:first-child th { /* Chọn các ô <th> nằm trong dòng đầu tiên (first-child) của bảng. */
+    color: blue;  
+    font-size: 25px; /* Chỉnh cỡ chữ 25 */
+}
+
+/* 3. Các dòng dữ liệu còn lại: Cỡ chữ 14 */
+table tr:not(:first-child) td {
+    font-size: 14px;
+}
+
+/* 4. Mỗi dòng còn lại một màu nền riêng */
+table tr:nth-child(2) {
+    background-color: #FFF3CD; /* Dòng 1 (Lê Hữu Tín): Màu vàng nhạt */
+}
+table tr:nth-child(3) {
+    background-color: #D1E7DD; /* Dòng 2 (Nguyễn Thị Hồng): Màu xanh lá nhạt */
+}
+table tr:nth-child(4) {
+    background-color: #F8D7DA; /* Dòng 3 (Trần Văn A): Màu hồng nhạt */
+}
+
+/* 5. Khi đưa chuột vào từng dòng (hover) xuất hiện màu khác cho từng dòng */
+table tr:nth-child(2):hover {
+    background-color: #FFE69C; /* Hover dòng 1 */
+}
+table tr:nth-child(3):hover {
+    background-color: #A3CFBB; /* Hover dòng 2 */
+}
+table tr:nth-child(4):hover {
+    background-color: #F1AEB5; /* Hover dòng 3 */
+}
+
