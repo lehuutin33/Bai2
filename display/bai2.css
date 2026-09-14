@@ -1,0 +1,74 @@
+.restaurant-list{ /* Điều chỉnh hàng menu bên trên */
+    display:flex;   /*Nếu không dùng thì các menu sẽ xếp theo chiều dọc */
+    width:100%;      /*Chiều rộng của mỗi menu vì thế 5 menu sẽ chiếm 100% */
+    gap:10px;        /* Khoảng cách giữa các menu */
+}
+
+.restaurant-card{
+    flex:1;     
+    height: 200px;
+    object-fit:cover; 
+    background-color:aliceblue;
+    border:1px solid black;
+    border-radius:5px; 
+}
+
+.restaurant-card img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    padding:5px;
+    box-sizing: border-box;
+    display:block;
+}
+.restaurant-card p{
+    font-size:12px;
+    margin:5px 8px;
+}
+
+.restaurant-card h3{
+    margin: 8px;
+}
+
+.h3{
+    font-size: 20px;
+    margin: 8px;
+}
+
+p{
+    font-size: 15px;
+    margin: 8px;
+}
+
+header img{
+    height:35px;
+    width:35px;
+    object-fit: contain;  /* giúp logo giữ đúng tỉ lệ khung */
+}
+
+header{
+    display:flex;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid black;    
+    padding: 7px;
+}
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 50, 116)
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+main{
+    margin-top:20px;
+}
+
+body{
+    margin:0;
+    padding: 20px;
+}

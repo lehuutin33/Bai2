@@ -1,0 +1,70 @@
+/* * {
+	box-sizing: content-box;
+} */
+
+body {
+	margin: 0; 
+	padding: 24px;
+	background-color: #f1f1f1;
+}
+
+.gallery {
+	display: flex;  /* Nếu không dùng tự động hình sẽ bị rớt xuống, khi dùng 2 div lớn sẽ nằm ngang */
+	gap: 8px;     /* Tạo khoảng cách giữa 2 div lớn*/
+	width: min(100%, 780px);     /* Nếu màn hình lớn */
+	margin: 0 auto;
+	padding: 8px;
+	background-color: #ffffff;
+}
+
+.gallery-column {
+	display: flex; /* chia đều không gian cho 2 cột*/
+	flex: 1; /* Lấy tổng 2 box chia 2 xong rồi chia đều cho nhau*/
+	flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc*/
+	gap: 8px; /* Khoảng cách giữa 2 hộp */
+	min-width: 0; /* Cho phép các cột con co lại khi màn hình nhỏ */
+}
+
+/* .gallery-column-left img {
+	height: 168px;
+}
+
+.gallery-column-left img:first-child {
+	height: 232px;
+}
+
+.gallery-column-right img {
+	height: 232px;
+}
+
+.gallery-column-right img:last-child {
+	height: 344px;
+}
+
+.gallery img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+} */
+
+/* @media (max-width: 600px) {
+	body {
+		padding: 12px;
+	}
+
+	.gallery {
+		gap: 4px;
+		padding: 4px;
+	}
+
+	.gallery-column {
+		gap: 4px;
+	}
+
+	.gallery-column-left img,
+	.gallery-column-left img:first-child,
+	.gallery-column-right img,
+	.gallery-column-right img:last-child {
+		height: 120px;
+	}
+} */

@@ -3,10 +3,9 @@
 /* 1. Định dạng bảng ra giữa màn hình */
 table {
     margin: 0 auto; /* Căn giữa bảng */
-    border-collapse: collapse; /* Gộp viền bảng */
 }
 
-/* Khoảng cách lề bên trong các ô */
+/* Khoảng cách lề bên trong các ô */ 
 th, td {
     padding: 8px 15px; /* KHoảng cách trên dưới 8px, trái phải 15px */
     text-align: center; /* Căn giữa nội dung trong ô */
@@ -25,23 +24,23 @@ table tr:not(:first-child) td {
 
 /* 4. Mỗi dòng còn lại một màu nền riêng */
 table tr:nth-child(2) {
-    background-color: #FFF3CD; /* Dòng 1 (Lê Hữu Tín): Màu vàng nhạt */
+    background-color: #FFF3CD; 
 }
 table tr:nth-child(3) {
-    background-color: #D1E7DD; /* Dòng 2 (Nguyễn Thị Hồng): Màu xanh lá nhạt */
+    background-color: #D1E7DD; 
 }
 table tr:nth-child(4) {
-    background-color: #F8D7DA; /* Dòng 3 (Trần Văn A): Màu hồng nhạt */
+    background-color: #F8D7DA;
 }
 
 /* 5. Khi đưa chuột vào từng dòng (hover) xuất hiện màu khác cho từng dòng */
-table tr:nth-child(2):hover {
-    background-color: #FFE69C; /* Hover dòng 1 */
+table tr:nth-child(2):hover {   
+    background-color: #FFE69C;
 }
 table tr:nth-child(3):hover {
-    background-color: #A3CFBB; /* Hover dòng 2 */
+    background-color: #A3CFBB; 
 }
 table tr:nth-child(4):hover {
-    background-color: #F1AEB5; /* Hover dòng 3 */
+    background-color: #F1AEB5;
 }
 

@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding:20px;
+    background-color: #f5f5f5;
+}
+
+.gallery{
+    display: flex;
+    gap: 30px;
+}
+
+.gallery-column{
+    width: 50%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+img{
+    width: 100%;
+    object-fit:cover;
+}
+
+.gallery-column-left img{
+    height:168px;
+}
+
+.gallery-column-left img:first-child {
+	height: 232px;
+}
+
+.gallery-column-right img {
+	height: 232px;
+}
+
+.gallery-column-right img:last-child {
+	height: 344px;
+}

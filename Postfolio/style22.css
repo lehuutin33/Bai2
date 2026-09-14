@@ -1,0 +1,92 @@
+/* 1. Cài đặt chữ và màu nền cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* 2. Thanh Menu trên cùng */
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline; /* Xếp các mục menu nằm ngang */
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Tô màu nền xanh cho nút trang đang mở */
+nav a.active {
+    background-color: #007bff;
+    padding: 5px 10px;
+}
+
+/* 3. Khung nội dung chính */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+/* Tạo ô khung trắng chứa nội dung */
+.card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* 4. Nút bấm */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* 5. Cột cho trang Kỹ năng & Sản phẩm */
+.grid {
+    display: flex;
+    gap: 10px;
+}
+
+.item-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+/* 6. Chân trang */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
